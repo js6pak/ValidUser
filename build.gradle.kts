@@ -11,7 +11,7 @@ aliucord {
     changelog.set(file("CHANGELOG.md").readText())
     author("6pak", 141580516380901376)
     updateUrl.set("https://github.com/js6pak/ValidUser/releases/latest/download/updater.json")
-    buildUrl.set("https://github.com/js6pak/ValidUser/releases/latest/download/ValidUser.zip")
+    buildUrl.set("https://github.com/js6pak/ValidUser/releases/download/$version/ValidUser.zip")
 }
 
 android {
