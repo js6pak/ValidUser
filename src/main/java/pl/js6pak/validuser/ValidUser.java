@@ -63,7 +63,7 @@ public class ValidUser extends Plugin {
                         return;
                     }
 
-                    if (!renderContext.getUserNames().containsKey(userId)) {
+                    if (renderContext.getUserNames() != null && !renderContext.getUserNames().containsKey(userId)) {
                         Map<Long, User> users = StoreStream.Companion.getUsers().getUsers();
 
                         if (!users.containsKey(userId)) {

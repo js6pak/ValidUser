@@ -1,1 +1,1 @@
-* Switched to the correct repo structure
+* Fixed an error in the code

@@ -4,12 +4,13 @@ plugins {
     id("com.aliucord.gradle")
 }
 
-version = "0.1.2"
+version = "0.1.3"
 description = "Fixes an issue where mentions sometimes become invalid-user"
 
 aliucord {
     changelog.set(file("CHANGELOG.md").readText())
     author("6pak", 141580516380901376)
+    author("Tyman", 487443883127472129)
     updateUrl.set("https://github.com/js6pak/ValidUser/releases/latest/download/updater.json")
     buildUrl.set("https://github.com/js6pak/ValidUser/releases/latest/download/ValidUser.zip")
 }
