@@ -4,7 +4,7 @@ plugins {
     id("com.aliucord.gradle")
 }
 
-version = "0.1.2"
+version = "0.2.0"
 description = "Fixes an issue where mentions sometimes become invalid-user"
 
 aliucord {

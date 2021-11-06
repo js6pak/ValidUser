@@ -1,1 +1,2 @@
-* Switched to the correct repo structure
+* Rewritten in kotlin
+* Users are now fetched asynchronously, no more freezes!
