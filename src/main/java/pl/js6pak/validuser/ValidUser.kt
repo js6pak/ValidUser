@@ -117,7 +117,7 @@ class ValidUser : Plugin() {
                     return@patch
                 }
 
-                if (!renderContext.userNames.containsKey(userId)) {
+                if (!renderContext?.userNames.containsKey(userId)) {
                     val storeUser: StoreUser = StoreStream.getUsers()
                     val users = storeUser.users
 
