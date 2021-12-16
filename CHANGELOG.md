@@ -1,2 +1,1 @@
-* Rewritten in kotlin
-* Users are now fetched asynchronously, no more freezes!
+* Fix NPE caused by other plugins abusing the MessageRenderContext
