@@ -1,1 +1,2 @@
-* Fix NPE caused by other plugins abusing the MessageRenderContext
+* Update to latest Aliucord
+* Fix the NPE fix
