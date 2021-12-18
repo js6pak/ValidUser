@@ -25,7 +25,6 @@ import android.text.style.CharacterStyle
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import com.aliucord.CollectionUtils
-import com.aliucord.Logger
 import com.aliucord.annotations.AliucordPlugin
 import com.aliucord.entities.Plugin
 import com.aliucord.patcher.Hook
@@ -48,8 +47,6 @@ import retrofit2.HttpException
 
 @AliucordPlugin
 class ValidUser : Plugin() {
-    private val logger = Logger("ValidUser")
-
     private val lockedUsers = HashMap<Long, ArrayList<Long>>()
     private val invalidUsers = HashSet<Long>()
 
