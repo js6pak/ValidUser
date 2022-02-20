@@ -1,2 +1,1 @@
-* Update to latest Aliucord
-* Fix the NPE fix
+* Update to discord 115.4 (@Juby210)
