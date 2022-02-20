@@ -31,6 +31,7 @@ import com.aliucord.patcher.Hook
 import com.aliucord.patcher.InsteadHook
 import com.aliucord.patcher.PreHook
 import com.aliucord.utils.RxUtils.await
+import com.discord.models.user.CoreUser
 import com.discord.stores.StoreStream
 import com.discord.stores.StoreUser
 import com.discord.utilities.color.ColorCompat
@@ -84,7 +85,7 @@ class ValidUser : Plugin() {
                                 `WidgetChatListAdapterItemMessage$getMessageRenderContext$2`(this),
                                 ColorCompat.getThemedColor(context, R.b.theme_chat_spoiler_bg),
                                 ColorCompat.getThemedColor(context, R.b.theme_chat_spoiler_bg_visible),
-                                function1 as `WidgetChatListAdapterItemMessage$getSpoilerClickHandler$1`,
+                                function1 as `WidgetChatListAdapterItemMessage$getSpoilerClickHandler$1`?,
                                 `WidgetChatListAdapterItemMessage$getMessageRenderContext$3`(this),
                                 `WidgetChatListAdapterItemMessage$getMessageRenderContext$4`(context)
                         )
@@ -175,7 +176,7 @@ class ValidUser : Plugin() {
                                     return@schedule
                                 }
 
-                                logger.verbose("Fetched [$userId] = ${if (user == null) "null" else user.r()}")
+                                logger.verbose("Fetched [$userId] = ${if (user == null) "null" else CoreUser(user).username}")
 
                                 if (user != null) {
                                     storeUser.notifyUserUpdated.invoke(user)
